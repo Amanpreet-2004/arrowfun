@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dice.css">
+</head>
+<body>
+   <div id="game">Dice game</div>
+   <div id="player">
+    <h1>Player1</h1>
+    <h1>Player2</h1>
+   </div> 
+   <div id="images">
+    <img style="background-color: black; width:15rem;height:15rem" id="dice1" src="dice1.png">
+    <img style="background-color: black; width: 15rem;height: 15rem" id="dice2" src="dice2.png">
+   </div>
+   <div id="btn1">
+<button onclick="show1()" id="roll1">Roll</button>
+<button onclick="show2()" id="roll2">Roll</button>
+</div>
+<div id="score">
+    <div id="ply1">Score of player1 : 0</div>
+    <div id="ply2">Score of player2 : 0</div>
+</div>
+<div style="display:flex;">
+    <div id="rounds">
+        <h2 id="r1">Roll 1 : 0</h2>
+        <h2 id="r2">Roll 1 : 0</h2>
+        <h2 id="r3">Roll 1 : 0</h2>
+        <h2 id="r4">Roll 1 : 0</h2>
+        <h2 id="r5">Roll 1 : 0</h2>
+    </div>
+    <div id="rolls">
+        <h2 id="d1">Roll 1 : 0</h2>
+        <h2 id="r2">Roll 1 : 0</h2>
+        <h2 id="r3">Roll 1 : 0</h2>
+        <h2 id="r4">Roll 1 : 0</h2>
+        <h2 id="r5">Roll 1 : 0</h2>
+    </div>
+</div>
+<div id="win">
+    <button onclick="Winner()" id ="result">Winner</button>
+</div>
+
+
+
+</body>
+</html>

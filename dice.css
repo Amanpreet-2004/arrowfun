@@ -1,0 +1,69 @@
+body{
+    margin:0%;
+    padding: 0%;
+    background-color:rgb(230, 171, 202);
+}
+#game{
+    color: cornflowerblue;
+    font-size: 3rem;
+    display: flex;
+    margin: 1rem;
+    justify-content: center;
+}
+#player{
+    color: darkmagenta;
+    display: flex;
+    gap: 30rem;
+    justify-content: center;
+    margin: 1rem;
+}
+#images{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    gap: 15rem;
+    
+}
+
+#btn1{
+    display: flex;
+    justify-content: center;
+    gap: 35rem;
+}
+#roll1,#roll2{
+    color: black;
+    background-color: brown;
+    font-size: 2rem;
+    border: 0.2rem,solid,black;
+    border-radius: 0.5rem;
+}
+#score{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    gap:24rem;
+    color: deepskyblue;
+    margin:1rem;
+}
+#win{
+    display: flex;
+    justify-content: center;
+}
+#result{
+    color: black;
+    background-color: gold;
+    font-size: 1.5rem;
+    border:0.2rem,solid,black;
+    border-radius: 0.5rem;
+    margin: 1rem;
+}
+
+#rounds{
+    margin-left: 15rem;
+    color: bisque;
+}
+
+#rolls{
+    margin-left: 15rem;
+    color: blanchedalmond;
+}
