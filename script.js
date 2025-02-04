@@ -1,71 +1,7 @@
-// const btnsEle = document.querySelectorAll("button")
 
-// const inputEle = document.getElementById("result")
-
-// for(let i=0; i<btnsEle.length; i++){
-//    btnsEle[i].addEventListener("click", ()=>{
-   
-//     const btnValue = btnsEle[i].textContent
-//     if(btnValue === "CE"){
-//         clearResult()
-//     }else if (btnValue === 'back') {
-//        backResult()
-//     }
-//     else if(btnValue === "="){
-//         calculateResult()
-//     }else if(btnValue === "square")
-//         squareResult()
-
-//     else{
-//         appendValue(btnValue)
-//     }
-//    }) 
-// }
-
-// function clearResult(){
-//     inputEle.value = ""
-// }
-// function backResult(){
-//     inputEle.value = inputEle.value.slice(0, -1);
-// }
-// function squareResult() {
-//     try {
-//         const value = eval(inputEle.value);
-//         inputEle.value = Math.pow(value, 2);
-//     } catch {
-//         inputEle.value = "Error";
-//     }
-// }
-
-// function calculateResult(){
-//     inputEle.value = eval(inputEle.value)
-// }
-
-// function appendValue(btnValue){
-//     inputEle.value += btnValue
-// }
-
-
-const btnsEle = document.querySelectorAll("button");
+// const btnsEle = document.querySelectorAll("button");
 const inputEle = document.getElementById("result");
 
-for (let i = 0; i < btnsEle.length; i++) {
-    btnsEle[i].addEventListener("click", (function(value) {
-        return () => {
-            if (value === "CE") {
-                clearResult();
-            } else if (value === '#') {
-                backResult();
-            } else if (value === "=") {
-                calculateResult();
-            } else if (value === "square") {
-                squareResult();
-            } else {
-                appendValue(value);
-            }
-        };
-    })(btnsEle[i].textContent)); 
-}
 
 function clearResult() {
     inputEle.value = "";
@@ -75,25 +11,26 @@ function backResult() {
     inputEle.value = inputEle.value.slice(0, -1);
 }
 
-function squareResult() {
-    try {
-        const value = eval(inputEle.value);
-        inputEle.value = Math.pow(value, 2);
-    } catch {
-        inputEle.value = "Error";
+function calculateResult(){
+    let x=document.getElementById("result").value;
+    if(x.includes("^")){
+        x=x.replace("^","**")
+        inputEle.value=eval(x)
+    }else if(x.includes("%")){
+        x=x.replace("%","")
+        let c=x*1/100
+        inputEle.value=c
+    }else if(x.includes("√")){ 
+        x=x.replace("√","");
+        let s= Math.sqrt(x)
+        inputEle.value=s
+
+    }
+    else{
+        inputEle.value= eval(x)
     }
 }
 
-
-
-function calculateResult() {
-    try {
-        inputEle.value = eval(inputEle.value);
-    } catch {
-        inputEle.value = "Error";
-    }
-}
-
-function appendValue(btnValue) {
-    inputEle.value += btnValue;
+function value(btn){
+    inputEle.value += btn;
 }

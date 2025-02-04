@@ -1,6 +1,6 @@
 onload,onreset,onsubmit,action,onclick 
 windows.open("","","w=,h=");
-##url,window.name,widthang height
+##url,window.name,width and height
 r.moveby(7,7)
 
 addeventlistner
@@ -10,3 +10,24 @@ in queryseletor we use html,css
 object array dropdown
 use events
 make 3 dropdown   related color shade
+
+use data store in json alternative method  xml
+
+double  like a float with lengthy value.
+
+json .parse  covert into text
+.then   promise
+
+with alert only show ok button
+
+with confirm show ok and  cancel
+both alert and confirm are not using for input .
+
+with prompt show ok and cancel button.
+
+
+//<script>
+    alert("welcome");
+    prompt("enter marks");
+   confirm("hello world");
+</script>

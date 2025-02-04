@@ -21,13 +21,12 @@
  
 
 
-let colors=["red","black","brown","pink","orange","green","cyan","lightgreen","teal","plum","salmon","coral","deeppink","darkcyan","aqua","aquamarine","gray","darkred","lightblue","darkblue"]
+let colors=["red","brown","pink","orange","green","cyan","lightgreen","teal","plum","salmon","coral","deeppink","darkcyan","aqua","aquamarine","gray","darkred","lightblue","darkblue","chocolate","indianred","magenta"]
 let rang = ""
-for(let x of colors){
-    rang+="<option>" +x+ "</option>"
+for(let y of colors){
+    rang+="<option>" +y+ "</option>"
 }
 document.getElementById("colsel").innerHTML=rang;
-// document.getElementById("colsel1").innerHTML=rang;
 
 let divs=["d1","d2","d3","d4","d5","d6","d7","d8","d9","d10","d11","d12"]
 
@@ -36,11 +35,7 @@ function rangoli(value){
     let div=document.getElementById(divs[n])
     div.style.backgroundColor=value;
 }
-// function rangoli1(value){
-//     let n=parseInt(Math.random()*12)
-//     let div=document.getElementById(divs[n])
-//     div.style.backgroundColor=value;
-// }
+
 
 
 
